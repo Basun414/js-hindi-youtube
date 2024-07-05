@@ -40,15 +40,37 @@ const bigNumber = 3456854645756854n
 
 //Arrays, Objects, Functions
 
-const heros = ["Shaktimaan", "Naagraj", "Doga"]
+// const heros = ["Shaktimaan", "Naagraj", "Doga"]
 
-let myObj = {
-    name: "hitesh",
-    age: 22,
+// let myObj = {
+//     name: "hitesh",
+//     age: 22,
+// }
+
+// const myFunction = function() {
+//     console.log("Hello World");
+// }
+
+// console.log(typeof myFunction)
+
+//Stack (Primitive), Heap (Non-Primitive)
+
+let myYouTubename = "hiteshchoudharydotcom"
+
+let anothername = myYouTubename
+anothername = "chai aur code"
+
+console.log(myYouTubename); // hiteshchoudharydotcom
+console.log(anothername); //chai aur code
+
+let userOne = {
+    email: "user@google.com",
+    upi : "user@ybl"
 }
 
-const myFunction = function() {
-    console.log("Hello World");
-}
+let userTwo = userOne
 
-console.log(typeof myFunction)
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email)
